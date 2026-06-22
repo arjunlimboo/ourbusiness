@@ -177,11 +177,11 @@
     height: auto;
     display: block;
 }
-img {
+.owner1 img,
+.owner2 img {
     width: 200px;
-    height: 280px;   /* make height bigger than width for oval */
+    height: 280px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .badge-icon{
