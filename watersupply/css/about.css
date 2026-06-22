@@ -115,7 +115,31 @@
 .value-card p{
     color:#666;
 }
-.boss {
+.boss{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.owner1 {
+    border: 1px solid black;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 50px;          /* space between images */
+    justify-content: left;  /* center horizontally */
+    align-items: center;
+    flex-wrap: wrap;    /* allows wrapping on small screens */
+  position: relative;
+  transform: translate(0);
+  transform-style: preserve-3d;
+  
+    
+}
+.owner2 {
     border: 1px solid black;
     padding: 20px;
     width: 50%;
@@ -172,4 +196,39 @@ img {
     align-items:center;
     box-shadow:0 4px 10px rgba(0,0,0,.05);
     font-size:1.4rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* STACK OWNER CARDS */
+    .boss {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner1,
+    .owner2 {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* FIX IMAGE OVERRIDE ISSUE */
+    .owner1 img,
+    .owner2 img {
+        width: 140px !important;
+        height: 140px !important;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .owner1 h3,
+    .owner2 h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
 }
