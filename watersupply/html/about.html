@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        About Us | AquaFresh
+    </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="../css/main.css">
+
+    <link rel="stylesheet"
+          href="../css/about.css">
+
+    <link rel="stylesheet"
+          href="../css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div id="header"></div>
+
+    <!-- PAGE BANNER -->
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <h1>
+                About Brand
+            </h1>
+
+            <p>
+                Delivering Pure Water Solutions
+                For Homes And Businesses.
+            </p>
+
+        </div>
+
+    </section>
+    <div class="boss pic">
+         <section>
+         <div class="owner">
+                    <img src="../images/dbdaju.png" alt="">
+                    <h3>CEO of the company</h3>
+                </div>
+
+    </section>
+     <section>
+         <div class="owner">
+                    <img src="../images/logo.jpg" alt="">
+                    <h3>CEO of the company</h3>
+                </div>
+
+    </section>
+
+    </div>
+   
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section">
+
+        <div class="container about-wrapper">
+
+            <div class="about-left">
+
+                <span class="about-tag">
+
+                    About Our Company
+                
+
+                </span>
+               
+                <h2>
+
+                    Clean Water,
+                    Healthier Lives
+
+                </h2>
+
+                <h3 class="experience-headline">
+
+                    2 Years Of Experience
+                    In Water Filtration
+
+                </h3>
+
+                <p>
+
+                    We are committed to providing
+                    clean, safe and great-tasting
+                    water through innovative water
+                    filtration technologies.
+
+                </p>
+
+                <button class="btn-more-about">
+
+                    Learn More
+
+                </button>
+
+            </div>
+
+            <div class="about-right grid-metrics">
+
+                <div class="metric-box">
+
+                    <div class="metric-num"
+                         data-target="1200">
+
+                        1200+
+
+                    </div>
+
+                    <div class="metric-label">
+
+                        Happy Customers
+
+                    </div>
+
+                </div>
+
+                <div class="metric-box">
+
+                    <div class="metric-num"
+                         data-target="1450">
+
+                        1450+
+
+                    </div>
+
+                    <div class="metric-label">
+
+                        Produced in one day
+
+                    </div>
+
+                </div>
+
+                <div class="metric-box">
+
+                    <div class="metric-num"
+                         data-target="1800">
+
+                        10+
+
+                    </div>
+
+                    <div class="metric-label">
+
+                        Warehouse
+
+                    </div>
+
+                </div>
+
+                <div class="metric-box">
+
+                    <div class="metric-num"
+                         data-target="50">
+
+                        5+
+
+                    </div>
+
+                    <div class="metric-label">
+
+                        Team Members
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMPANY VALUES -->
+
+    <section class="values-section">
+
+        <div class="container">
+
+            <h2 class="section-main-title">
+
+                Why Choose Our Brand?
+
+            </h2>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+
+                    <i class="fas fa-shield-alt"></i>
+
+                    <h3>
+                        Safe Water
+                    </h3>
+
+                    <p>
+                        Advanced filtration systems
+                        ensure maximum water safety.
+                    </p>
+
+                </div>
+
+                <div class="value-card">
+
+                    <i class="fas fa-award"></i>
+
+                    <h3>
+                        Premium Quality
+                    </h3>
+
+                    <p>
+                        Industry-leading standards
+                        and quality assurance.
+                    </p>
+
+                </div>
+
+                <div class="value-card">
+
+                    <i class="fas fa-headset"></i>
+
+                    <h3>
+                        24/7 Support
+                    </h3>
+
+                    <p>
+                        Dedicated customer support
+                        whenever you need assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <div id="footer"></div>
+
+    <!-- COUNTER SCRIPT -->
+
+    <script src="../js/counterAnimation.js"></script>
+
+    <!-- LOAD HEADER -->
+
+    <script>
+
+        fetch("header.html")
+
+        .then(response => response.text())
+
+        .then(data => {
+
+            document.getElementById(
+                "header"
+            ).innerHTML = data;
+
+        });
+
+    </script>
+
+    <!-- LOAD FOOTER -->
+
+    <script>
+
+        fetch("footer.html")
+
+        .then(response => response.text())
+
+        .then(data => {
+
+            document.getElementById(
+                "footer"
+            ).innerHTML = data;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
