@@ -158,20 +158,6 @@
   
     
 }
-.pic:before {
-  content:"";
-  position: absolute;
-  inset: -5px;
-  transform: translate3d(10px,8px,-1px);
-  background: conic-gradient(from 135deg,
-        #e0f7ff,
-        #b3ecff,
-        #4fc3f7,
-        #03a9f4,
-        #0277bd,
-        #014f86);
-  filter: blur(10px);
-}
 .owner img {
     width: 200px;       /* adjust size as needed */
     height: auto;
